@@ -20,31 +20,30 @@ class LinkedList:
         current_node = self.head
         print("\n=== Linked List Content ===")
         while current_node is not None:
-            # Print the updated dictionary data
+           
             print(current_node.data)
             current_node = current_node.next
         print("===========================")
 
-# 1. Create the linked list
+
 student_records = LinkedList()
 
-# 2. Create sample data (dictionaries) with the corrected key
-# The keys are: 'Name of Student', 'Admnum', and 'Grades of different units'
+
 student_data_1 = {
     'Name of Student': 'Alice Johnson',
-    'Admnum': 'S1001',
-    'Grades of different units': {'Math': 'A', 'Physics': 'B+'}
+    'Admission': 'CIM/00108/024',
+    'Grades ': {'programming': 'A', 'python': 'B+'}
 }
 
 student_data_2 = {
-    'Name of Student': 'Bob Smith',
-    'Admnum': 'S1002',
-    'Grades of different units': {'Math': 'B', 'Chemistry': 'A-'}
+    'Name of Student': 'Bob Ojwang',
+    'Admission': 'CIM/00120/024',
+    'Grades ': {'Programming': 'B', 'python': 'A-'}
 }
 
-# 3. Insert the dictionaries into the linked list
+
 student_records.insert_at_beginning(student_data_2) 
 student_records.insert_at_beginning(student_data_1) 
 
-# 4. Print the list to verify the structure and data
+
 student_records.traverse_and_print()
